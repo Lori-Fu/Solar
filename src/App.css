@@ -1,0 +1,257 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+body{
+  font-family: 'Golos Text', sans-serif;
+  /* border: 3px solid red;  */
+}
+
+/* Homepage */
+#HomepageBg {
+  margin-top: 0px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.homepage-container h1 {
+  margin-top: 200px;
+  width: 100%;
+  position: absolute;
+  text-align:center;
+  z-index: 1;
+  font-size: 4vw;
+  color:white;
+  /* border: 3px solid red; */
+}
+
+.homepage-container p{
+  width: 100%;
+  margin-top: 300px;
+  font-size: 2vw;
+  position: absolute;
+  text-align:center;
+  z-index: 1;
+  color:white;
+}
+
+
+/* Navigator */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 65px;
+
+}
+
+nav .navRight{
+  width: 180px;
+  padding: 20px;
+  margin-right: 2%;
+}
+
+nav .navLeft{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  padding: 20px;
+  margin-left: 3%;
+  overflow: hidden;
+}
+
+nav img{
+  height: 70px;
+  width: 70px
+}
+
+nav h3{
+  font-size: 23px;
+  width: 400px;
+  margin-left: 5px;
+}
+
+nav .SigninButton {
+  border: none;
+  font-size: 15px;
+  background-color: transparent;
+  color: rgb(28,50,76);
+  text-decoration: none;
+  cursor: pointer;
+  /* border:3px solid red; */
+  width: 500px;
+}
+
+.navRightButton{
+  /* border:3px solid blue; */
+  display: flex;
+  box-sizing: border-box;
+}
+
+/* Signin */
+.signin-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  /* border: 10px solid blue; */
+}
+
+.email-signin{
+  height:60%;
+  background-color: white;
+  opacity: 0.8;
+  /* border: 5px solid blue; */
+  padding: 2%;
+  margin-bottom: 25px
+}
+
+/* Password */
+.LogInBox{
+  height: 100%;
+  width: 400px;
+  /* border: 5px solid blue; */
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-align: center
+}
+
+.LogInBox h1{
+  font-size: 2.5vw;
+  color:rgb(28,50,76);
+  margin-bottom: 30px;
+}
+
+.LogInBox input[type=text], input[type=password]{
+  height: 50px;
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+.LogInBox input[type=submit]{
+  height: 50px;
+  width: 80%;
+  background-color: rgb(28,50,76);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* SignUp */
+
+.signin-box-2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  /* border: 10px solid blue; */
+}
+
+.email-signin-2{
+  height:60%;
+  background-color: white;
+  opacity: 0.8;
+  /* border: 5px solid blue; */
+  padding: 2%;
+  margin-top: 60px;
+  margin-bottom: 25px
+}
+
+.LogInBox-2{
+  height: 100%;
+  width: 400px;
+  /* border: 5px solid blue; */
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-align: center
+}
+
+.LogInBox-2 h2{
+  font-size: 2vw;
+  color:rgb(28,50,76);
+  margin-bottom: 30px;
+}
+
+.LogInBox-2 input[type=text], input[type=password]{
+  height: 50px;
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+.LogInBox-2 input[type=submit]{
+  height: 50px;
+  width: 80%;
+  background-color: rgb(28,50,76);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#selector{
+  height: 50px;
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+/* Google */
+
+
+
+@media screen and (min-width: 800px) {
+
+  nav button, .SigninButton {
+    font-size: 18px;
+  }
+}
+
+.signin-box{
+  height:70%;
+}
